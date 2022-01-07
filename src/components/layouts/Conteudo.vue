@@ -1,11 +1,13 @@
 <template>
   <div>
-    <p>Single File Component</p>
+      <p>Conteúdo</p>
   </div>
 </template>
 
 <script>
-
+export default {
+  name: 'Conteudo'
+}
 </script>
 
 <style>
