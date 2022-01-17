@@ -9,8 +9,8 @@
 
           <div>
             <div class="form-check form-switch">
-              <label for="favorito" class="form-check-label">Favoritar</label>
-              <input type="checkbox" v-model="favoritada" id="favorito" class="form-check-input">
+              <label class="form-check-label">Favoritar</label>
+              <input type="checkbox" v-model="favoritada" class="form-check-input">
             </div>
           </div>
         </div>
