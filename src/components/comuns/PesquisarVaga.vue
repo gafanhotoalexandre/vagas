@@ -6,7 +6,7 @@
         
         <div class="form-group">
           <label for="vaga">Título da Vaga</label>
-          <input type="text" class="form-control" placeholder="Pesquise por palavras-chave, por exemplo 'PHP', 'Pleno', 'Analista'">
+          <input type="text" v-model="titulo" @keyup.enter="PesquisarVaga()" class="form-control" placeholder="Pesquise por palavras-chave, por exemplo 'PHP', 'Pleno', 'Analista'">
           <small class="form-text text-muted">Informe palavras que estejam relacionadas com o título da vaga que você procura.</small>
         </div>
 
@@ -15,7 +15,7 @@
 
     <div class="row">
       <div class="col">
-        <button class="btn btn-outline-dark mt-2" type="button">Buscar</button>
+        <button @click="PesquisarVaga()" class="btn btn-outline-dark mt-2" type="button">Buscar</button>
       </div>
     </div>
   </div>
@@ -24,6 +24,14 @@
 <script>
 export default {
   name: 'PesquisarVaga',
+  data: () => ({
+    titulo: '',
+  }),
+  methods: {
+    PesquisarVaga() {
+      this.emitter.emit('filtrarVagas', { titulo: this.titulo })
+    }
+  }
 }
 </script>
 
