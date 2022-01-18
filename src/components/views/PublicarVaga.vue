@@ -96,8 +96,8 @@ export default {
           titulo: `A vaga ${this.titulo} foi cadastrada com sucesso!`,
           descricao: 'Parabéns, a vaga foi cadastrada e poderá ser consultada por milhares de profissionais em nosssa plataforma.'
         })
-  
         this.resetaFormularioCadastroVaga()
+        
       } else {
         this.emitter.emit('alerta', {
           tipo: 'erro',

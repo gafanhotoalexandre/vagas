@@ -9,6 +9,7 @@
         <h5 id="offcanvasRightLabel">Vagas Favoritadas</h5>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
+      
       <div class="offcanvas-body">
         <ul class="list-group">
           <li class="list-group-item"
@@ -33,7 +34,7 @@ export default {
     this.emitter.on('desfavoritarVaga', (titulo) => {
       const indiceArray = this.vagas.indexOf(titulo)
       if (indiceArray !== -1) this.vagas.splice(indiceArray, 1)
-  })
+    })
   }
 }
 </script>
