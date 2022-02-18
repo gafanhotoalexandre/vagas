@@ -1,4 +1,7 @@
-# vagas-front
+# Vagas
+
+### Informações Úteis
+Esta é uma aplicação front end, desenvolvida com o intuito de aperfeiçoar as habilidades com o framework VueJS, logo, poderão haver alguns bugs e comportamentos inesperados.
 
 ## Project setup
 ```
