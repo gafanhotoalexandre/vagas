@@ -2,6 +2,7 @@
 
 ### Informações Úteis
 Esta é uma aplicação front end, desenvolvida com o intuito de aperfeiçoar as habilidades com o framework VueJS, logo, poderão haver alguns bugs e comportamentos inesperados.
+Acessar aplicação na web: https://vagas-frontend.herokuapp.com/
 
 ## Project setup
 ```
